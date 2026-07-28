@@ -1,0 +1,41 @@
+# Core LangChain
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-community==0.0.10
+langgraph==0.0.20
+langsmith==0.0.87
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Data Validation
+pydantic==2.5.0
+pydantic-settings==2.1.0
+
+# Environment
+python-dotenv==1.0.0
+
+# Logging
+loguru==0.7.2
+
+# Vector Store
+chromadb==0.4.22
+
+# Token Counting
+tiktoken==0.5.2
+
+# HTTP Client
+httpx==0.25.2
+aiofiles==23.2.1
+
+# Document Processing
+beautifulsoup4==4.12.2
+pypdf==3.17.1
+
+# Cache (Optional)
+redis==5.0.1
+
+# Utilities
+tenacity==8.2.3

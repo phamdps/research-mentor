@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment Variables
+.env
+.env.local
+.env.production
+.env.staging
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project Specific
+data/
+logs/
+exports/
+*.db
+*.sqlite3
+vector_store/
+research_db/
+chroma_db/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.coverage.*
+tests/fixtures/tmp/
+
+# Docker
+.docker/
+docker-compose.override.yml
+
+# Documentation
+site/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Misc
+Thumbs.db
+*.log
+*.tmp
