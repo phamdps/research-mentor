@@ -168,8 +168,8 @@ graph TD
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/research-assistant.git
-cd research-assistant
+git clone https://github.com/phamdps/research-mentor.git
+cd research-mentor
 
 # Run setup script
 chmod +x scripts/setup.sh
@@ -180,8 +180,8 @@ chmod +x scripts/setup.sh
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/research-assistant.git
-cd research-assistant
+git clone https://github.com/phamdps/research-mentor.git
+cd research-mentor
 
 # 2. Create virtual environment
 python -m venv venv
@@ -438,7 +438,7 @@ docker-compose up -d --build
 ## 📚 Project Structure
 
 ```
-langchain-research-assistant/
+research-mentor/
 │
 ├── config/                         # Configuration management
 │   ├── settings.py                 # Pydantic settings with validation
@@ -537,7 +537,7 @@ All LLM calls, chain executions, and workflow steps are automatically traced:
 ### Viewing Traces
 
 1. Go to [LangSmith Dashboard](https://smith.langchain.com)
-2. Select your project: `research-assistant`
+2. Select your project: `research-mentor`
 3. View traces, analyze latency, and monitor costs
 
 ### Creating Evaluation Datasets
@@ -674,7 +674,7 @@ def test_research_query_creation():
 
 ```bash
 # Build production image
-docker build -t research-assistant:latest .
+docker build -t research-mentor:latest .
 
 # Run with production config
 docker run -d \
@@ -683,7 +683,7 @@ docker run -d \
   -e ENVIRONMENT=production \
   -e OPENAI_API_KEY=$OPENAI_API_KEY \
   -v /data/research:/app/data \
-  research-assistant:latest
+  research-mentor:latest
 ```
 
 ### Kubernetes (Example)
@@ -692,20 +692,20 @@ docker run -d \
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: research-assistant
+  name: research-mentor
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: research-assistant
+      app: research-mentor
   template:
     metadata:
       labels:
-        app: research-assistant
+        app: research-mentor
     spec:
       containers:
       - name: api
-        image: research-assistant:latest
+        image: research-mentor:latest
         ports:
         - containerPort: 8000
         env:
